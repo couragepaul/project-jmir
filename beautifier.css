@@ -1,0 +1,116 @@
+body {
+    background-color: #eee;
+}
+
+*[role="form"] {
+    max-width: 600px;
+    padding: 40px;
+
+    margin: 0px auto;
+    margin-top: -25px;
+    margin-bottom: 40px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    border-radius: 0;
+}
+
+*[role="form"] h2 {
+    margin-left: 5em;
+    margin-bottom: 1em;
+}
+
+input[type="text"], input[type="tel"], select[type="option"]{
+	border-radius: 0;
+	border: 3 none;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+/*.newsright input[type="submit"]{
+    border: none;
+    padding: 10px 20px 11px;
+    font-size: 15px;
+    outline: none;
+    text-transform: uppercase;
+    margin: 0 0 0 -4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+	background: #2fdab8;
+	color:#fff;
+}*/
+
+.btn {
+    padding: 15px 30px;
+    border: 0 none;
+    font-weight: bold;
+    font-size: 12.5px;
+    letter-spacing: 0.5px;
+    border-radius:0;
+    font-family: Radikal, Open Sans;
+
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+span {
+	font-weight: 500;
+	font-family: Open Sans, proxima-nova, "Proxima Nova";
+	font-size: 12px;
+	/*font-style: normal;*/
+}
+
+
+.form-group.required .control-label:after { 
+    color: #d00;
+    content: "*";
+    position: absolute;
+    margin-left: auto;
+    top:auto;
+}
+
+.well{
+	text-align: center;
+	background-color: white;
+}
+
+.heading{
+	padding-top: 36px;
+	padding-bottom: 18px;
+	text-align: center;
+	background-color: white;
+}
+.add_info{
+	color:  #429bf4;
+	font-weight: 600;
+	font-size: 14px;
+	font-family: Radikal, Open Sans;;
+	letter-spacing: 0.4px;
+}
+
+.list_info{
+	color: gray;
+	font-weight: 600;
+	font-size: 14px;
+	font-family: Radikal, Open Sans;
+	letter-spacing: 0.4px;
+}
+
+.province{
+	padding-top: 55px;
+	
+}
