@@ -62,11 +62,11 @@
 		  </div>
 		  <div class="col-sm-6">
 			  <label for="tel_id" class="control-label"><span>TELEPHONE</span></label>
-			  <input type="tel" class="form-control" id="tel_id" name="phoneNum" placeholder="Phone Number" ng-model="phoneNumber" ng-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[,0-9]{3}[-\s\.]?[,0-9]{4,6}$/" ng-minlength="10" ng-required="true">
+			  <input type="tel" class="form-control" id="tel_id" name="phoneNum" placeholder="Phone Number" ng-model="phoneNumber" ng-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[,0-9]{3}[-\s\.]?[,0-9]{4,6}$/" ng-maxlength="11" ng-required="true">
 
 			  <div ng-messages="myForm.phoneNum.$error">
 			  	<div ng-message="pattern">Must be a valid phone number</div>
-			  	<div ng-message="minlength">Must be over 10 digits</div>
+			  	<div ng-message="maxlength">Please enter a valid number</div>
 			  </div>
 		  </div>
 		</div>

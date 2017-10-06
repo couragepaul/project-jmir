@@ -13,22 +13,12 @@ if(mysqli_connect_errno($conn))
 }
 else
 {
-	echo "connection successful";
+	// echo "connection successful";
 }
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Create database
 
-// 	$sql = "CREATE DATABASE myDBase";
-
-// if (mysqli_query($conn, $sql)) {
-//     echo "Database created successfully";
-// } else {
-//     echo "Error creating database: " . mysqli_error($conn);
-// }
-
-// mysqli_close($conn);
 ?>

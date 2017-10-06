@@ -120,13 +120,29 @@ span {
     text-align: center;
 }
 
-th {
+.data_page{
+    text-align: center;
+}
+
+/*th {
     text-align: center;
     padding: 8px;
     background-color: gray;
     color: white;
     font-weight: 500;
     font-family: verdana, Open Sans;
+}*/
+
+.myTD {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
+
+
+.accepted{
+    text-align: center;
+}
+
 
 
