@@ -9,7 +9,7 @@ body {
     margin: 0px auto;
     margin-top: -25px;
     margin-bottom: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     background-color: #fff;
     border-radius: 0;
 }
@@ -98,7 +98,7 @@ span {
 	color:  #429bf4;
 	font-weight: 600;
 	font-size: 14px;
-	font-family: Radikal, Open Sans;;
+	font-family: Radikal, Open Sans;
 	letter-spacing: 0.4px;
 }
 
@@ -110,7 +110,23 @@ span {
 	letter-spacing: 0.4px;
 }
 
-.province{
-	padding-top: 55px;
-	
+.mytable{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
 }
+
+th {
+    text-align: center;
+    padding: 8px;
+    background-color: gray;
+    color: white;
+    font-weight: 500;
+    font-family: verdana, Open Sans;
+}
+
+

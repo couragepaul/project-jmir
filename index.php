@@ -14,7 +14,7 @@
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
 <div class="heading">
-	<p><span class="add_info">ADD INFORMATION</span> | <span class="list_info">LISTING PAGE</span></p>
+	<p><a href="index.php"><span class="add_info">ADD INFORMATION</span></a> | <a href="listing.php"><span class="list_info">LISTING PAGE</span></a></p>
 </div>
 <br>
 <br>
