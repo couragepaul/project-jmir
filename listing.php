@@ -17,7 +17,7 @@
 		</p>
 	</div>
 
-	<div class="data_page">
+	<div class="list_page">
        
        <?php 
 
@@ -39,7 +39,7 @@
 				while($row = mysqli_fetch_assoc($result))
    			 	{ 
    			 		echo "<tr>";
-   			 		
+
    			 		echo "<td>" .  $row["name"] . "</td>";
    			 		echo "<td>" .  $row["province_id"] . "</td>";
    			 		echo "<td>" .  $row["phoneNum"] . "</td>";

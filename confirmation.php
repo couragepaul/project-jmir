@@ -53,11 +53,11 @@ mysqli_query($conn,"INSERT INTO users ( name , phoneNum , province_id  , postal_
 	?>
 
 	<div class="data_page">
-		<?php echo "Name  : " , $_POST['name']  ;?><br>
-		<?php echo "Province : " , $_POST['province'];?><br> 
-		<?php echo "Telephone : " , $_POST['phoneNum'] ;?><br>
-		<?php echo "Postal Code : " , $_POST['postalCode'];?><br>
-		<?php echo "Salary :" , $_POST['salary'];?>
+		<?php echo "<span class='data'>Name</span> " , "   " , " : " ,$_POST['name']  ;?><br>
+		<?php echo "<span class='data'>Province</span>  " , "  " , " : " ,  $_POST['province'];?><br> 
+		<?php echo "<span class='data'>Telephone</span>  " , "  " , " : " ,$_POST['phoneNum'] ;?><br>
+		<?php echo "<span class='data'>Postal Code</span>  " , "   " , " : " ,  $_POST['postalCode'];?><br>
+		<?php echo "<span class='data'>Salary </span>" , "  " , " : ", $_POST['salary'];?>
 	</div>
 </body>
 </html>
