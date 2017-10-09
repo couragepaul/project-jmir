@@ -81,7 +81,7 @@
 	</div>
 
 	<div class="form-group"> <!-- Submit Button -->
-		<div class="col-sm-4 col-sm-offset-8">
+		<div class="col-sm-3.50 col-sm-offset-8">
             <button type="submit" class="btn btn-primary btn-block">SAVE</button>
         </div>
 	</div>     

@@ -9,17 +9,11 @@ $postalCode=$_POST['postalCode'];
 $salary=$_POST['salary'];
 
 //Execute the query
- 
-
 mysqli_query($conn,"INSERT INTO users ( name , phoneNum , province_id  , postal_code , salary)
-				VALUES('$name' , '$phone' , '$province' ,'$postalCode','$salary')");
-
-
-
+			VALUES('$name' , '$phone' , '$province' ,'$postalCode','$salary')");
 
 
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -43,7 +37,7 @@ mysqli_query($conn,"INSERT INTO users ( name , phoneNum , province_id  , postal_
 
 		
 		if(mysqli_affected_rows($conn) > 0){
-			echo "<p class='accepted' style = 'text-align: center; border:5px; margin-left:20%; margin-right: 20%;margin-top:1%;padding-top:0.5%;padding-bottom:0.5%;color:white;background-color:#429bf4;'> Your data is saved. Go to listing page to see.<br></p>";	
+			echo "<p class='accepted' style = 'text-align: center; border:5px; margin-left:27.5%; margin-right: 28.5%;margin-top:1%;padding-top:0.5%;padding-bottom:0.5%;color:white;background-color:#429bf4;'> Your data is saved. Go to listing page to see.<br></p>";	
 			
 		} 		
 		else {
@@ -53,11 +47,36 @@ mysqli_query($conn,"INSERT INTO users ( name , phoneNum , province_id  , postal_
 	?>
 
 	<div class="data_page">
-		<?php echo "<span class='data'>Name</span> " , "   " , " : " ,$_POST['name']  ;?><br>
-		<?php echo "<span class='data'>Province</span>  " , "  " , " : " ,  $_POST['province'];?><br> 
-		<?php echo "<span class='data'>Telephone</span>  " , "  " , " : " ,$_POST['phoneNum'] ;?><br>
-		<?php echo "<span class='data'>Postal Code</span>  " , "   " , " : " ,  $_POST['postalCode'];?><br>
-		<?php echo "<span class='data'>Salary </span>" , "  " , " : ", $_POST['salary'];?>
+		<?php 
+			echo "<table>";
+			echo "<tr style='padding-bottom: 35px;'>";
+			echo "<th style='text-align: left; color:black; padding-top: 35px;'>Name</th>";
+			echo "<td style='padding-right: 35px; padding-left: 12px; padding-top: 35px; color:black;'>:</td>";
+			echo "<td style='padding-top: 35px;'>". $_POST['name'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+			echo "<th style='text-align: left; color:black; padding-top: 15px;'>Province</th>";
+			echo "<td style='padding-right: 35px; padding-left: 12px; padding-top: 15px; color:black;'>:</td>";
+			echo "<td style='padding-top: 15px;'>". $_POST['province'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+			echo "<th style='text-align: left; color:black; padding-top: 15px;'>Telephone</th>";
+			echo "<td style='padding-right: 35px; padding-left: 12px; padding-top: 15px; color:black;'>:</td>";
+			echo "<td style='padding-top: 15px;'>". $_POST['phoneNum'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+			echo "<th style='text-align: left; color:black; padding-top: 15px;'>Postal Code</th>";
+			echo "<td style='padding-right: 35px; padding-left: 12px; padding-top: 15px; color:black;'>:</td>";
+			echo "<td style='padding-top: 15px;'>". $_POST['postalCode'] . "</td>";
+			echo "</tr>";
+			echo "<tr>";
+			echo "<th style='text-align: left; color:black; padding-top: 15px;'>Salary</th>";
+			echo "<td style='padding-right: 35px; padding-left: 12px; padding-top: 15px; color:black;'>:</td>";
+			echo "<td style='padding-top: 15px;'>". $_POST['salary'] . "</td>";
+			echo "</tr>";
+		?>
 	</div>
+
+		
 </body>
 </html>
