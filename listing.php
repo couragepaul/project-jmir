@@ -2,7 +2,7 @@
 
 <?php
 
-	$limit = 30;  
+	$limit = 25;  
 		if (isset($_GET["page"])) 
 		{
  			$page  = $_GET["page"]; 
@@ -80,14 +80,15 @@
 		$row = mysqli_fetch_row($rs_result);  
 		$total_records = $row[0];  
 		$total_pages = ceil($total_records / $limit);  
-		$pagLink = "<div class='pagination'>";  
+		echo "<div class='pagination'>";
+		$pagLink = "<a href='listing.php?page=".($page-1)."'><</a>";  
 		
-		echo $total_records;
-
+		
 		for ($i=1; $i<=$total_pages; $i++) {  
-            $pagLink .= "<a href='listing.php?page=".$i."' style='padding-right:15px;'>".$i."</a>";  
+            $pagLink .= "<a href='listing.php?page=".$i."' style='padding-left:15px;padding-right:15px;'>".$i."</a>";  
 		};  
-		echo $pagLink . "</div>";  
+		echo $pagLink .= "<a href='listing.php?page=".($page+1)."' class='button'>></a>";  
+		echo "</div>";
 	?>
 
 
